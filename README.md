@@ -1,5 +1,3 @@
-# eva-ave.github.io
+# eva-hiew-sook-yee.github.io
 
 My profile webpage
-
-**Watch the progress of my live webpage at https://eva-ave.github.io **
