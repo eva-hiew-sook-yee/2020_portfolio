@@ -35,16 +35,29 @@
 
 			#third-page-background{
 				background-image: url("autodesk_intern_showcase.jpg");
-				height: 105%;
+				height: 70%;
+				width: 100%;
 				background-repeat: no-repeat;
 				background-position: center;
-				background-size: contain;
+				background-size: cover;
+				display: table;	
 			}
+			
+			#third-page-text-alignment{
+				display: table-cell;
+				vertical-align: middle;
+			}		
 
-			.front-page-text{
+			h1.front-page-text{
 				font-family: 'Montserrat', sans-serif;
-				font-size: 70px;
 				font-weight: 800;
+				font-size: 70px;
+			}
+			
+			@media screen and (max-width: 875px){
+				h1.front-page-text{
+					font-size: 40px;
+				}
 			}
 
 			.front-page-profile-picture{
@@ -52,52 +65,98 @@
 				margin-bottom: 20px;
 			}
 
-			.front-page-name{
+			h1.front-page-name{
 				margin-top: 30px;
 				margin-left: 90px;
 				font-family: 'Montserrat', sans-serif;
 				font-size:35px;
 				font-weight: 600;
 			}
+			
+			@media screen and (max-width: 875px){
+				h1.front-page-name{
+					margin-top: 30px;
+					margin-left: 30px;
+					font-size: 20px;
+				}
+			}
 
 			.second-page-container-margin{
 				margin-top: 140px;
+				margin-bottom: 140px;
+			}
+			
+			@media screen and (max-width: 875px){
+				div.second-page-container-margin{
+					font-size: 20px;
+					margin-top: 100px;
+					margin-bottom: 100px;
+				}
 			}
 
-			.second-page-head-text{
+			h2.second-page-head-text{
 				font-family: 'Montserrat', sans-serif;
 				font-size: 35px;
 				font-weight: 700;
 			}
+			
+			@media screen and (max-width: 875px){
+				h2.second-page-head-text{
+					font-size: 20px;
+				}
+			}
 
-			.second-page-text{
+			p.second-page-text{
 				margin-top: 50px;
 				font-family: 'Montserrat', sans-serif;
 				font-size: 25px;
 				font-weight: 500;
 			}
+			
+			@media screen and (max-width: 875px){
+				p.second-page-text{
+					font-size: 15px;
+				}
+			}
 
-			.second-page-emoticon-size-adjust{
+			i.second-page-emoticon-size-adjust{
 				font-size: 25px;
+			}
+			
+			@media screen and (max-width: 875px){
+				i.second-page-emoticon-size-adjust{
+					font-size: 15px;
+				}
 			}
 
 			.second-page-text-line-spacing{
 				line-height: 2.1;
 			}
 
-			.third-page-text{
-				margin-top: 270px;
+			h1.third-page-text{
 				font-family: 'Montserrat', sans-serif;
 				font-size: 35px;
 				font-weight: 400;
 				line-height: 1.8;
+			}
+			
+			@media screen and (max-width: 875px){
+				h1.third-page-text{
+					font-size: 18px;
+				}
 			}
 
 			.fourth-page-head-text{
 				font-family: 'Montserrat', sans-serif;
 				font-size: 35px;
 				font-weight: 300;
-				margin-bottom: 0px;
+				margin-top: 70px;
+			}
+			
+			@media screen and (max-width: 875px){
+				p.fourth-page-head-text{
+					font-size: 30px;
+				}
 			}
 			
 			.fourth-page-bracket-text{
@@ -118,6 +177,13 @@
 				padding-left: 5em;
 				padding-right: 5em;
 			}
+			
+			@media screen and (max-width: 875px){
+				div.item{
+					padding-left: 2.5em;
+					padding-right: 2.5em;
+				}
+			}
 		
 		</style>
 
@@ -126,7 +192,6 @@
 	<body>
 
 		<div id="front-page-background">
-
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12 text-white">
@@ -137,7 +202,7 @@
 
 			<div class="container-fluid">
 				<div class="row justify-content-center align-items-center">
-					<div class="col-7 col-md-3 col-lg-2">
+					<div class="col-6 col-md-3 col-lg-2">
 						<img src="profile_pic.jpg" class="img-fluid rounded-circle front-page-profile-picture" alt="Responsive Image" >
 					</div>
 				</div>
@@ -169,18 +234,17 @@
 							<br/>
 							On the sidelines, I teach mathematics and dwelve into philosophy topics.
 							<br/>
-							I also enjoy running, hiking, reading and writing.
+							My hobbies include running, hiking, reading, writing and Pokemon Go.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="container-fluid" id="third-page-background">
-			<div class="text-center">
-				<div class="row">
-					<div class="col-12 text-white">
-						<h1 class="third-page-text">
+		<div id="third-page-background">
+				<div id="third-page-text-alignment">
+					<div class="text-center text-white">
+						<h1 class="third-page-text" >
 							I've had an amazing internship with Autodesk!
 							<br/>
 							currently working on a mobile application for my FYP;
@@ -190,7 +254,7 @@
 						</h1>
 					</div>
 				</div>
-			</div>
+
 		</div>
 
 		<div class="container-fluid">
@@ -201,7 +265,7 @@
 							Connect with me!
 						</p>
 						<p class="fourth-page-bracket-text">
-							(And yes, I'm actively looking out for opportunities!)
+							(And yes, I'm now on the lookout for opportunities!)
 						</p>
 					</div>
 				</div>
@@ -213,13 +277,19 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="item">
-							<a href="mailto:evahiew@gmail.com"><i class="fas fa-envelope fa-fw" style="font-size:30px;color:#000000"></i></a>
+							<a href="mailto:EVAH0001@e.ntu.edu.sg">
+								<i class="fas fa-envelope fa-fw" style="font-size:30px;color:#000000"></i>
+							</a>
 						</div>
 						<div class="item">
-							<a href="https://github.com/eva-ave" target="_blank"><i class="fab fa-github fa-fw" style="font-size:30px;color:#000000"></i></a>
+							<a href="https://github.com/eva-ave" target="_blank">
+								<i class="fab fa-github fa-fw" style="font-size:30px;color:#000000"></i>
+							</a>
 						</div>
 						<div class="item">
-							<a href="www.linkedin.com/in/eva-hiew" target="_blank"><i class="fab fa-linkedin fa-fw" style="font-size:30px;color:#000000"></i></a>
+							<a href="https://www.linkedin.com/in/eva-hiew" target="_blank">
+								<i class="fab fa-linkedin fa-fw" style="font-size:30px;color:#000000"></i>
+							</a>
 						</div>
 					</div>
 				</div>
